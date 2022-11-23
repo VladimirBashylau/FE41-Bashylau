@@ -1,0 +1,142 @@
+
+$font-Raleway: 'Raleway', sans-serif; 
+$font-Cardo: 'Cardo', serif ;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        width: 1170px;
+        display: inline-block;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        border: 1px solid #BABBC5;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        max-width: 184px;
+        width: 100%;
+
+        &-link {
+            width: 100%;
+            }
+
+        &-img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style: none;
+
+        &-link {
+            font-family:$font-Raleway;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 15px;
+            text-decoration: none;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            cursor: pointer;
+            padding: 36px 39px;
+            text-align: center;
+            display: inline-block;
+        }
+    }
+
+    &__burger {
+        display: none;
+    }
+}
+
+.favorit {
+    position: relative;
+    text-align: center;
+    padding: 230px 0 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/favorit_bg.jpg);
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: #252B49;
+        opacity: 0.8;
+    }
+
+    &__title {
+        position: relative;
+        z-index: 1;
+        font-family:$font-Raleway;
+        font-weight: 900;
+        font-size: 64px;
+        line-height: 75px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-align: center;
+        margin-bottom: 31px;
+    }
+
+    &__text {
+        position: relative;
+        z-index: 1;
+        font-family:$font-Raleway;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 80px;
+    }
+
+    &__btn {
+        position: relative;
+        z-index: 1;
+        font-family:$font-Raleway;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 28px;
+        background: #FF4343;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 26px;
+        max-width: 370px;
+        width: 100%;
+        border: none;
+        cursor: pointer;
+    }
+}
