@@ -13,6 +13,18 @@ $font-Cardo: 'Cardo', serif ;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+
+    @media(min-width:768px) and (max-width:1024px) {
+        max-width: 984px;
+    }
+
+    /*@media(min-width:768px) {
+        max-width: 700px;
+    }*/
+
+    @media(min-width:320px) and (max-width:767px) {
+        max-width: 280px;
+    }
 }
 
 .header {
@@ -20,7 +32,7 @@ $font-Cardo: 'Cardo', serif ;
     width: 100%;
     z-index: 1;
 
-    &::before {
+    /*&::before {
         content: "";
         width: 1170px;
         display: inline-block;
@@ -29,17 +41,31 @@ $font-Cardo: 'Cardo', serif ;
         left: 50%;
         transform: translate(-50%, 0);
         border: 1px solid #BABBC5;
-    }
+
+        @media(min-width:768px) and (max-width:1024px) {
+            width: 984px;
+        }
+    }*/
 
     &__container {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        border-bottom: 1px solid #BABBC5;
+
+        @media(min-width:320px) and (max-width:767px) {
+            border: none;
+
+        }
     }
 
     &__logo {
         max-width: 184px;
         width: 100%;
+
+        @media(min-width:320px) and (max-width:767px) {
+            max-width: 103px;
+        }
 
         &-link {
             width: 100%;
@@ -66,14 +92,36 @@ $font-Cardo: 'Cardo', serif ;
             color: #FFFFFF;
             text-transform: uppercase;
             cursor: pointer;
-            padding: 36px 39px;
+            padding: 42px 39px;
             text-align: center;
             display: inline-block;
+
+            @media(min-width:768px) and (max-width:1024px) {
+                font-size: 12px;
+                line-height: 14px;
+                padding: 42.5px 19px;
+            }
+
+            @media(min-width:320px) and (max-width:767px) {
+                display: none;
+            }
+            /*@media(min-width:768px) {
+                font-size: 10px;
+                line-height: 12px;
+                padding: 44px 19px;
+            }*/
         }
     }
 
     &__burger {
         display: none;
+
+        @media(min-width:320px) and (max-width:767px) {
+            display: inline-block;
+            background: none;
+            border: none;
+            padding: 19px 35px;
+        }
     }
 }
 
@@ -85,6 +133,14 @@ $font-Cardo: 'Cardo', serif ;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(../images/favorit_bg.jpg);
+
+    @media(min-width:768px) and (max-width:1024px) {
+        padding: 257px 0 126px;
+    }
+
+    @media(min-width:320px) and (max-width:767px) {
+        padding: 106px 0 52px;
+    }
 
     &::before {
         content: "";
@@ -108,6 +164,18 @@ $font-Cardo: 'Cardo', serif ;
         color: #FFFFFF;
         text-align: center;
         margin-bottom: 31px;
+
+        @media(min-width:768px) and (max-width:1024px) {
+            font-size: 48px;
+            line-height: 56px;
+            margin-bottom: 61px;
+        }
+        
+        @media(min-width:320px) and (max-width:767px) {
+            font-size: 36px;
+            line-height: 42px;
+            margin-bottom: 33px;
+        }
     }
 
     &__text {
@@ -120,6 +188,18 @@ $font-Cardo: 'Cardo', serif ;
         text-align: center;
         color: #FFFFFF;
         margin-bottom: 80px;
+
+        @media(min-width:768px) and (max-width:1024px) {
+            font-size: 18px;
+            line-height: 21px;
+            margin-bottom: 89px;
+        }
+
+        @media(min-width:320px) and (max-width:767px) {
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 49px;
+        }
     }
 
     &__btn {
@@ -138,5 +218,14 @@ $font-Cardo: 'Cardo', serif ;
         width: 100%;
         border: none;
         cursor: pointer;
+
+        @media(min-width:768px) and (max-width:1024px) {
+            max-width: 314px;
+        }
+
+        @media(min-width:320px) and (max-width:767px) {
+            max-width: 280px;
+            padding: 16px;
+        }
     }
 }
