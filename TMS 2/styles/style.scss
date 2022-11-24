@@ -95,6 +95,16 @@ $font-Cardo: 'Cardo', serif ;
             padding: 42px 39px;
             text-align: center;
             display: inline-block;
+            border-bottom: 3px solid transparent;
+
+            &:hover{
+                border-bottom: 3px solid #BABBC5;
+            }
+
+            &:active{
+                color: #E71414;
+                border-bottom: 3px solid #E71414;
+            }
 
             @media(min-width:768px) and (max-width:1024px) {
                 font-size: 12px;
@@ -218,6 +228,15 @@ $font-Cardo: 'Cardo', serif ;
         width: 100%;
         border: none;
         cursor: pointer;
+
+        &:hover{
+            background: #E71414;
+        }
+
+        &:active{
+            box-shadow: 0 0 30px #FF4343;
+            background: #FF4343;
+        }
 
         @media(min-width:768px) and (max-width:1024px) {
             max-width: 314px;

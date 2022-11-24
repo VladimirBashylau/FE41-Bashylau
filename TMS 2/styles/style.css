@@ -88,11 +88,19 @@
   padding: 42px 39px;
   text-align: center;
   display: inline-block;
+  border-bottom: 3px solid transparent;
   /*@media(min-width:768px) {
       font-size: 10px;
       line-height: 12px;
       padding: 44px 19px;
   }*/
+}
+.header__nav-link:hover {
+  border-bottom: 3px solid #BABBC5;
+}
+.header__nav-link:active {
+  color: #E71414;
+  border-bottom: 3px solid #E71414;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .header__nav-link {
@@ -214,6 +222,13 @@
   width: 100%;
   border: none;
   cursor: pointer;
+}
+.favorit__btn:hover {
+  background: #E71414;
+}
+.favorit__btn:active {
+  box-shadow: 0 0 30px #FF4343;
+  background: #FF4343;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .favorit__btn {
