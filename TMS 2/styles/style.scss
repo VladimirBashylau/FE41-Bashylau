@@ -13,18 +13,6 @@ $font-Cardo: 'Cardo', serif ;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-
-    @media(min-width:768px) and (max-width:1024px) {
-        max-width: 984px;
-    }
-
-    /*@media(min-width:768px) {
-        max-width: 700px;
-    }*/
-
-    @media(min-width:320px) and (max-width:767px) {
-        max-width: 280px;
-    }
 }
 
 .header {
@@ -197,18 +185,18 @@ $font-Cardo: 'Cardo', serif ;
         line-height: 28px;
         text-align: center;
         color: #FFFFFF;
-        margin-bottom: 80px;
+        margin-bottom: 106px;
 
         @media(min-width:768px) and (max-width:1024px) {
             font-size: 18px;
             line-height: 21px;
-            margin-bottom: 89px;
+            margin-bottom: 115px;
         }
 
         @media(min-width:320px) and (max-width:767px) {
             font-size: 14px;
             line-height: 16px;
-            margin-bottom: 49px;
+            margin-bottom: 75px;
         }
     }
 
@@ -223,11 +211,12 @@ $font-Cardo: 'Cardo', serif ;
         text-transform: uppercase;
         color: #FFFFFF;
         text-align: center;
-        padding: 26px;
+        padding: 26px 91px;
         max-width: 370px;
         width: 100%;
         border: none;
         cursor: pointer;
+        text-decoration: none;
 
         &:hover{
             background: #E71414;
@@ -250,14 +239,14 @@ $font-Cardo: 'Cardo', serif ;
 }
 
 .infoblocks {
-    padding: 116px 0;
+    margin: 116px 0;
     
     @media(min-width:768px) and (max-width:1024px) {
-        padding: 80px 0;
+        margin: 80px 0;
     }
 
     @media(min-width:320px) and (max-width:767px) {
-        padding: 40px 0;
+        margin: 40px 0;
     }
 
     &__container {
@@ -308,7 +297,8 @@ $font-Cardo: 'Cardo', serif ;
         font-size: 24px;
         line-height: 28px;
         margin-bottom: 50px;
-        text-align: center;
+        text-transform: uppercase;
+
 
         @media(min-width:768px) and (max-width:1024px) {
             font-size: 18px;
@@ -341,6 +331,7 @@ $font-Cardo: 'Cardo', serif ;
 .gallery {
     display: grid;
     grid-template-columns:repeat(4, 1fr) ;
+    gap: 2px;
 
     @media(min-width:320px) and (max-width:767px) {
         grid-template-columns: 1fr  1fr;
@@ -354,7 +345,7 @@ $font-Cardo: 'Cardo', serif ;
         
         &::before {
             content:"";
-            margin-top: 89.9%;
+            padding-top: 89.9%;
             display: block;
         }
         
@@ -364,10 +355,9 @@ $font-Cardo: 'Cardo', serif ;
             left: 0;
             width: 100%;
             height: 100%;
-            
-            object-fit: contain;
+            overflow: hidden;
+            object-fit: cover;
             object-position: center;
-
         }
     }
 
@@ -386,7 +376,6 @@ $font-Cardo: 'Cardo', serif ;
         width: 100%;
         height: 100%;
         background: rgba(255, 67, 67, 0.8);
-        border: 2px solid #FFFFFF;
         opacity: 0;
 
         @media(min-width:768px) and (max-width:1024px) {
@@ -576,9 +565,5 @@ $font-Cardo: 'Cardo', serif ;
         width: 39px;
         height: 39px;
         margin-top:auto;
-
-        &-img{
-            
-        }
     }
 }
