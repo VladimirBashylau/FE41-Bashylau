@@ -548,7 +548,7 @@
   .employee__text {
     font-size: 14px;
     line-height: 16px;
-    line-height: 55px;
+    margin-bottom: 55px;
   }
 }
 .employee__medias {
