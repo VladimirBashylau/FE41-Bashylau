@@ -813,3 +813,170 @@ $font-Cardo: 'Cardo', serif ;
     }
 
 }
+
+.footer {
+
+    &__wrap-top {
+        background-color: #353C65;
+    }
+
+    &__wrap-bottom {
+        background-color: #2C3154;
+        padding: 24px 15px;
+
+        @media(min-width:768px) and (max-width:1024px) {
+            padding: 14px 15px;
+        }
+    
+        @media(min-width:320px) and (max-width:767px) {
+            padding: 29px 15px;
+        }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 30px;
+        padding: 71px 15px;
+
+        @media(min-width:768px) and (max-width:1024px) {
+            padding: 43px 15px;
+            column-gap: 20px;
+        }
+    
+        @media(min-width:320px) and (max-width:767px) {
+            padding: 34px 15px;
+            flex-direction: column;
+            row-gap: 69px;
+        }
+    }
+
+    &__we {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 29px;
+        width: calc((100% - 60px)/3);
+
+        @media(min-width:768px) and (max-width:1024px) {
+            row-gap: 17px;
+        }
+    
+        @media(min-width:320px) and (max-width:767px) {
+            row-gap: 34px;
+            width: 100%;
+        }
+
+        &-title {
+            font-family: $font-Raleway;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+
+            @media(min-width:768px) and (max-width:1024px) {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        
+            @media(min-width:320px) and (max-width:767px) {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+
+        &-text {
+            font-family: $font-Raleway;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+            text-align: center;
+
+            @media(min-width:768px) and (max-width:1024px) {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        
+            @media(min-width:320px) and (max-width:767px) {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    }
+
+    &__medias {
+        display: flex;
+        column-gap: 27px;
+        margin-top: auto;
+
+        @media(min-width:768px) and (max-width:1024px) {
+            column-gap: 23px;
+        }
+    
+        @media(min-width:320px) and (max-width:767px) {
+            column-gap: 17px;
+        }
+    }
+
+    &__media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #C6CBCD;
+        width: 39px;
+        height: 39px;
+
+        @media(min-width:768px) and (max-width:1024px) {
+            width: 33px;
+            height: 33px;
+        }
+    
+        @media(min-width:320px) and (max-width:767px) {
+            width: 33px;
+            height: 33px;
+        }
+    }
+
+    &__bottom-text {
+        font-family: $font-Raleway;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #808080;
+        text-align: center;
+        text-transform: capitalize;
+
+        @media(min-width:768px) and (max-width:1024px) {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    
+        @media(min-width:320px) and (max-width:767px) {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+
+    &__bottom-name {
+        font-family: $font-Raleway;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+        text-align: center;
+        text-transform: capitalize;
+
+        @media(min-width:768px) and (max-width:1024px) {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    
+        @media(min-width:320px) and (max-width:767px) {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+}
